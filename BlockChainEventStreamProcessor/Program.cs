@@ -15,7 +15,8 @@ namespace BlockChainEventStreamProcessor
             .CreateLogger();
 
             //args = new[] { "--read-file", "C:\\Users\\vijay\\source\\repos\\BlockChainEventStreamProcessor\\BlockChainEventStreamProcessor\\transactions.json" }; // uncomment thils
-            //for debug
+            //args = new[] {program --read-inline '[{ "Type": "Mint", "TokenId":"0xD000000000000000000000000000000000000000", "Address":"0x1000000000000000000000000000000000000000" },{ "Type": "Mint", "TokenId":"0xQ000000000000000000000000000000000000000", "Address":"0x7000000000000000000000000000000000000000" }]'}
+
             if (args.Length == 0)
             {
                 showHelp(args);

@@ -38,7 +38,7 @@ namespace Program.Commands
             // Convert list of arguments to single json string
             string[] jsonArgs = Args.Skip(1).ToArray();
             string jsonObject = Regex.Replace(Regex.Replace(String.Join("", jsonArgs),":", "\":\""),",", "\",\"").Replace("{", "{\"").Replace("}", "\"}").Substring(1);
-            jsonObject = jsonObject.Substring(0, jsonObject.Length - 1);
+            jsonObject = jsonObject.Substring(0, jsonObject.Length - 1).Replace("}\",\"{", "},{");
 
             //convert json string to object list
             var txnInputData = jsonObject.ReadTokenData();
