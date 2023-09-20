@@ -13,7 +13,7 @@ namespace Program.Commands
     /// <summary>
     /// To handle --read-inline '{ "key": "value"}'
     /// </summary>
-    internal class ReadInlineCommand :ICommand
+    public class ReadInlineCommand :ICommand
     {
 
         /// <summary>

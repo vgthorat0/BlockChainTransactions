@@ -11,7 +11,7 @@ namespace Program.AppState
     /// <summary>
     /// Stores the application state in json fie. This can be modifed to store state in database as well.
     /// </summary>
-    internal static class ApplicationState
+    public static class ApplicationState
     {
         public static List<BlockChainWallet> blockChains {get;set;}
 

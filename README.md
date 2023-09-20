@@ -21,10 +21,15 @@ Download and install above prerequisite on you windows or macOS. Windows is pref
 
 ## How to build and run
 - Open powershell or command prompt on windows
-- Extract thw project source code in C:\Downloads. You can change this directory but make sure you change path in following commands too.
-- Open project directory on command prompt
+- Extract/Checkout the project source code in C:\repo. You can change this directory but make sure you change path in following commands too.
+- Run Unit test cases - This step is optional
 ```sh
- cd 'C:\Downalods\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor' 
+    cd C:\repo\BlockChainEventStreamProcessor\BlockChain.UnitTest
+    dotnet test BlockChain.UnitTest.csproj
+```
+- Open project directory on command prompt to build program 
+```sh
+ cd 'C:\repo\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor' 
 ```
 - Run below command
 ```sh
@@ -34,11 +39,11 @@ Download and install above prerequisite on you windows or macOS. Windows is pref
 ```sh
 cd "bin\Debug\net6.0"
 ```
-- full path would be C:\Downalods\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor\bin\Debug\net6.0 This path will have Program.exe generated after successful build.
+- full path would be C:\repo\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor\bin\Debug\net6.0 This path will have Program.exe generated after successful build.
 
 - Once you in output directory run your test some of sample commands are as below
 ```sh
-program --read-file C:\Downloads\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor\transactions.json
+program --read-file C:\repo\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor\transactions.json
 program --nft 0xA000000000000000000000000000000000000000
 program --nft 0xB000000000000000000000000000000000000000
 program --nft 0xC000000000000000000000000000000000000000
@@ -62,3 +67,4 @@ MIT
    [df2]: <https://code.visualstudio.com/download>
    [df3]: <https://visualstudio.microsoft.com/vs/community/>
    [df4]: <https://www.newtonsoft.com/json/help/html/serializingjson.htm>
+   [df5]: <https://dillinger.io/>

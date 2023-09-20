@@ -13,7 +13,7 @@ namespace Program.Utils
     /// <summary>
     /// Class to pefrom transactions and update the application state
     /// </summary>
-    internal class BlockChainTransaction
+    public class BlockChainTransaction
     {
         /// <summary>
         /// A mint transaction creates a new token in the wallet with the provided address

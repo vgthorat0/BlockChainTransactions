@@ -12,7 +12,7 @@ namespace Program.Commands
     /// <summary>
     /// To handle --read-file [file.json]
     /// </summary>
-    internal class ReadFileCommand :ICommand
+    public class ReadFileCommand :ICommand
     {
 
         /// <summary>

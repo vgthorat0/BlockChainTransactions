@@ -9,7 +9,7 @@ namespace Program.BusinessObjects
     /// <summary>
     /// BlockChain information 
     /// </summary>
-    internal class BlockChainWallet
+    public class BlockChainWallet
     {
         /// <summary>
         /// Blockchain wallet address
