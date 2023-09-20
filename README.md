@@ -43,7 +43,7 @@ cd "BlockChainEventStreamProcessor\bin\Debug\net6.0"
 
 Some of sample commands are as below. 
 ```sh
-program --read-file C:\BlockChainTransactions\BlockChainEventStreamProcessor\transactions.json
+program --read-file ..\..\..\transactions.json
 program --nft 0xA000000000000000000000000000000000000000
 program --nft 0xB000000000000000000000000000000000000000
 program --nft 0xC000000000000000000000000000000000000000
