@@ -41,6 +41,8 @@ cd "BlockChainEventStreamProcessor\bin\Debug\net6.0"
 
 - Once you in output directory run your test. 
 
+- You can find logs of application in "consoleapp.log" file.
+
 Some of sample commands are as below. 
 ```sh
 program --read-file ..\..\..\transactions.json
