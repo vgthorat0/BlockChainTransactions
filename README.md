@@ -21,37 +21,34 @@ Download and install above prerequisite on you windows or macOS. Windows is pref
 
 ## How to build and run
 - Open powershell or command prompt on windows
-- Extract/Checkout the project source code in C:\repo. You can change this directory but make sure you change path in following commands too.
+- Extract/Checkout the project source code in C:\. You can change this directory but make sure you change path in following commands too.
 - Run Unit test cases - This step is optional
 ```sh
-    cd C:\repo\BlockChain.UnitTest
+    cd C:\BlockChainTransactions\
 	
-    dotnet test BlockChain.UnitTest.csproj
+    dotnet test "BlockChain.UnitTest\BlockChain.UnitTest.csproj"
 ```
-- Open project directory on command prompt to navigate on project directory 
-```sh
- cd 'C:\repo\BlockChainEventStreamProcessor' 
-```
+
 - Run below command to build application
 ```sh
-  dotnet build Program.csproj
+  dotnet build "BlockChainEventStreamProcessor\Program.csproj"
 ```
 - Open directory where output is generated
 ```sh
-cd "bin\Debug\net6.0"
+cd "BlockChainEventStreamProcessor\bin\Debug\net6.0"
 ```
-- full path would be C:\repo\BlockChainEventStreamProcessor\bin\Debug\net6.0 This path will have Program.exe generated after successful build.
+- full path would be C:\BlockChainTransactions\BlockChainEventStreamProcessor\bin\Debug\net6.0 This path will have Program.exe generated after successful build.
 
 - Once you in output directory run your test. 
 
 Some of sample commands are as below. 
 ```sh
-program --read-file C:\repo\BlockChainEventStreamProcessor\transactions.json
+program --read-file C:\BlockChainTransactions\BlockChainEventStreamProcessor\transactions.json
 program --nft 0xA000000000000000000000000000000000000000
 program --nft 0xB000000000000000000000000000000000000000
 program --nft 0xC000000000000000000000000000000000000000
 program --nft 0xD000000000000000000000000000000000000000
-program --read-inline "{ "Type": "Mint", "TokenId":"0xD000000000000000000000000000000000000000", "Address":"0x1000000000000000000000000000000000000000" }"
+program --read-inline '{ "Type": "Mint", "TokenId":"0xD000000000000000000000000000000000000000", "Address":"0x1000000000000000000000000000000000000000" }'
 program --nft 0xD000000000000000000000000000000000000000
 program --wallet 0x3000000000000000000000000000000000000000
 program —-reset
