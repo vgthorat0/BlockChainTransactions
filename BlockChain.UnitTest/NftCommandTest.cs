@@ -32,7 +32,7 @@ namespace BlockChain.UnitTest
         [Test]
         public void NftCommand_Should_Return_Correct_Message_For_InvalidToken()
         {
-            //Arrage
+            //Arrange
             string[] args =  { "--nft", _invalidTokenId };
             var cmd = new NftCommand(args);
             
@@ -46,7 +46,7 @@ namespace BlockChain.UnitTest
         [Test]
         public void NftCommand_Should_Return_Correct_Message_For_ValidToken()
         {
-            //Arrage
+            //Arrange
             string[] args = { "--nft", _validTokenId };
             var cmd = new NftCommand(args);
 
