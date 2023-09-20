@@ -24,14 +24,15 @@ Download and install above prerequisite on you windows or macOS. Windows is pref
 - Extract/Checkout the project source code in C:\repo. You can change this directory but make sure you change path in following commands too.
 - Run Unit test cases - This step is optional
 ```sh
-    cd C:\repo\BlockChainEventStreamProcessor\BlockChain.UnitTest
+    cd C:\repo\BlockChain.UnitTest
+	
     dotnet test BlockChain.UnitTest.csproj
 ```
-- Open project directory on command prompt to build program 
+- Open project directory on command prompt to navigate on project directory 
 ```sh
- cd 'C:\repo\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor' 
+ cd 'C:\repo\BlockChainEventStreamProcessor' 
 ```
-- Run below command
+- Run below command to build application
 ```sh
   dotnet build Program.csproj
 ```
@@ -39,11 +40,13 @@ Download and install above prerequisite on you windows or macOS. Windows is pref
 ```sh
 cd "bin\Debug\net6.0"
 ```
-- full path would be C:\repo\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor\bin\Debug\net6.0 This path will have Program.exe generated after successful build.
+- full path would be C:\repo\BlockChainEventStreamProcessor\bin\Debug\net6.0 This path will have Program.exe generated after successful build.
 
-- Once you in output directory run your test some of sample commands are as below
+- Once you in output directory run your test. 
+
+Some of sample commands are as below. 
 ```sh
-program --read-file C:\repo\BlockChainEventStreamProcessor\BlockChainEventStreamProcessor\transactions.json
+program --read-file C:\repo\BlockChainEventStreamProcessor\transactions.json
 program --nft 0xA000000000000000000000000000000000000000
 program --nft 0xB000000000000000000000000000000000000000
 program --nft 0xC000000000000000000000000000000000000000
@@ -59,7 +62,7 @@ program --wallet 0x3000000000000000000000000000000000000000
 
 MIT
 
-**Free Software, Hell Yeah!**
+**Free Software**
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
